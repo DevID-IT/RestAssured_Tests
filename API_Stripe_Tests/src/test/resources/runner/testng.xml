@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Stripe API Tests" parallel="methods" thread-count="6" data-provider-thread-count="6">
+    <test name="Create Customer Tests">
+        <classes>
+            <class name="tests.customers.CreateCustomerTest"/>
+        </classes>
+    </test>
+    <test name="Delete Customer API Test">
+        <classes>
+            <class name="tests.customers.DeleteCustomerTest"/>
+        </classes>
+    </test>
+    <test name="Update Customer API Test">
+        <classes>
+            <class name="tests.customers.UpdateCustomerTest"/>
+        </classes>
+    </test>
+    <test name="Get Customer API Test">
+        <classes>
+            <class name="tests.customers.GetCustomersTest"/>
+        </classes>
+    </test>
+</suite>
