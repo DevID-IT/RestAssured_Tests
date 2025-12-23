@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PayPal API Tests" parallel="methods" thread-count="6" data-provider-thread-count="6">
+    <test name="Create Order Tests">
+        <classes>
+            <class name="tests.orders.CreateOrderTest"/>
+        </classes>
+    </test>
+    <test name="Get Order Details Tests">
+        <classes>
+            <class name="tests.orders.GetOrderTest"/>
+        </classes>
+    </test>
+    <test name="Update Order Tests">
+        <classes>
+            <class name="tests.orders.UpdateOrderTest"/>
+        </classes>
+    </test>
+    <test name="Confirm the Order Tests">
+        <classes>
+            <class name="tests.orders.ConfirmTheOrderTest"/>
+        </classes>
+    </test>
+    <test name="Capture Payment For Order Tests">
+        <classes>
+            <class name="tests.orders.CapturePaymentForOrderTest"/>
+        </classes>
+    </test>
+    <test name="Add Track Information For Order Tests">
+        <classes>
+            <class name="tests.orders.TrackingInformationForOrderTest"/>
+        </classes>
+    </test>
+</suite>
